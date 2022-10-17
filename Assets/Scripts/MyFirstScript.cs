@@ -8,6 +8,8 @@ public class MyFirstScript : MonoBehaviour
      This is a multiline comment:
      4 variables with the player information
      */
+    
+    /*
     public int playerAge = 33;
     public string playerName = "emesefe";
     private float playerSpeed = 3.125f;
@@ -15,9 +17,15 @@ public class MyFirstScript : MonoBehaviour
 
     public string message = "Hola mundo.";
     public int points = 256;
-    
+    */
+
+    public float x = 2;
+    public float y = 3;
+    private float result;
+
     private void Start()
     {
+        /*
         Debug.Log(message);
         Debug.Log(points);
         Debug.Log($"Tengo {points} puntos");
@@ -32,6 +40,11 @@ public class MyFirstScript : MonoBehaviour
             playerName, points));
         
         Debug.Log("Tengo " + points + " puntos");
+        */
+
+        //x = x + y;
+        x += y;
+        Debug.Log(x);
     }
 }
     

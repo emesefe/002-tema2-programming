@@ -150,12 +150,13 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 225022525}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 859d1ce126e6b4a59b5e6bd46fc728a5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   wheels: 8
+  name: Bus
 --- !u!136 &225022527
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -440,12 +441,13 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1358869476}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 859d1ce126e6b4a59b5e6bd46fc728a5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   wheels: 4
+  name: Car
 --- !u!135 &1358869478
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -556,11 +558,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c381679dee3f340beb93388b889a76bb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerAge: 18
-  playerName: emesefe
-  isGameOver: 0
-  message: "Esta es tu puntuaci\xF3n total:"
-  points: 763
+  x: 2
+  y: 11
 --- !u!65 &2040270868
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -666,12 +665,13 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2113336373}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 859d1ce126e6b4a59b5e6bd46fc728a5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   wheels: 2
+  name: Moto
 --- !u!136 &2113336375
 CapsuleCollider:
   m_ObjectHideFlags: 0
