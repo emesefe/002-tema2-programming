@@ -5,11 +5,15 @@ using UnityEngine;
 
 public class Vehicle : MonoBehaviour
 {
-    [SerializeField] private int wheels = 4;
+    // Ejercicio: Crea variables
+    [SerializeField] private int wheels = 4; //Number of wheels of the vehicle
+    
+    // Ejercicio: Muestra variables I
     [SerializeField] private string name;
 
     private void Start()
     {
+        // Ejercicio: Muestra variables II
         // Forma 1
         Debug.Log($"El vehículo {name} tiene {wheels} ruedas.");
         // Forma 2

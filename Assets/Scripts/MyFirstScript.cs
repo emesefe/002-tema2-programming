@@ -7,44 +7,112 @@ public class MyFirstScript : MonoBehaviour
     /*
      This is a multiline comment:
      4 variables with the player information
-     */
+    */
     
     /*
+    // Declaración de variables y tipos de variables
     public int playerAge = 33;
     public string playerName = "emesefe";
     private float playerSpeed = 3.125f;
     [SerializeField] private bool isGameOver = false;
 
+    // Mostrar mensajes por consola
     public string message = "Hola mundo.";
     public int points = 256;
     */
 
+    // Operadores aritméticos
     public float x = 2;
     public float y = 3;
     private float result;
+    public int xInt = 10;
+    public int yInt = 4;
+    public int resultInt;
 
     private void Start()
     {
         /*
+        // Mostrar mensajes por consola
+        // * De forma directa mostramos el resultado de una variable
         Debug.Log(message);
         Debug.Log(points);
-        Debug.Log($"Tengo {points} puntos");
         
-        Debug.Log($"Hola {playerName}, tienes {points} puntos");
+        // * Combinamos strings con valores de variables
+        // ** FORMA 1
+        Debug.Log($"Tengo {points} puntos"); // Una sola variable
+        Debug.Log($"Hola {playerName}, tienes {points} puntos"); // Más de una variable
         
-        Debug.Log(string.Format(
-            "Tengo {0} puntos", points));
+        // ** FORMA 2
+        Debug.Log(string.Format("Tengo {0} puntos", points)); // Una sola variable
+        Debug.Log(string.Format("Hola {0}, tienes {1} puntos", 
+            playerName, points)); // Más de una variable
         
-        Debug.Log(string.Format(
-            "Hola {0}, tienes {1} puntos", 
-            playerName, points));
-        
-        Debug.Log("Tengo " + points + " puntos");
+        // ** FORMA 3
+        Debug.Log("Tengo " + points + " puntos"); // Una sola variable
+        Debug.Log("Hola " + playerName + " tienes " + points + " puntos"); // Más de una variable
         */
-
+        
+        // Operadores aritméticos
+        // * Suma
+        // ** Nos ayudamos de una variable adicional que guarda el resultado
+        // result = x + y;
+        // Debug.Log(result);
+        // ** Modificamos directamente uno de los sumandos cada vez que llevamos a cabo la operación suma
+        // *** Forma larga
         //x = x + y;
-        x += y;
+        // *** Forma vaga
+        //x += y;
+        // *** Caso particular en que sumamos de 1 en 1
+        // x++;
+        // Debug.Log(x);
+        
+        // * Resta
+        // ** Nos ayudamos de una variable adicional que guarda el resultado
+        // result = x - y;
+        // Debug.Log(result);
+        // ** Modificamos directamente el minuendo cada vez que llevamos a cabo la operación resta
+        // *** Forma larga
+        //x = x - y;
+        // *** Forma vaga
+        //x -= y;
+        // *** Caso particular en que restamos de 1 en 1
+        // x--;
+        // Debug.Log(x);
+        
+        // * Multiplicación
+        // ** Nos ayudamos de una variable adicional que guarda el resultado
+        // result = x * y;
+        // Debug.Log(result);
+        // ** Modificamos directamente uno de los factores cada vez que llevamos a cabo la operación producto
+        // *** Forma larga
+        //x = x * y;
+        // *** Forma vaga
+        // x *= y;
+        // Debug.Log(x);
+        
+        // * División
+        // Es recomendable que las variables sean de tipo float
+        // ** Nos ayudamos de una variable adicional que guarda el resultado
+        // result = x / y;
+        // Debug.Log(result);
+        // ** Modificamos directamente el dividendo cada vez que llevamos a cabo la operación división
+        // *** Forma larga
+        //x = x / y;
+        // *** Forma vaga
+        x /= y;
         Debug.Log(x);
+        
+        // * Módulo: nos devuelve el resto de la división entera
+        // Es importante que las variables sean de tipo int
+        // ** Nos ayudamos de una variable adicional que guarda el resultado
+        // resultInt = xInt % yInt;
+        // Debug.Log(resultInt);
+        // ** Modificamos directamente el dividendo cada vez que llevamos a cabo la operación módulo
+        // *** Forma larga
+        //xInt = xInt % yInt;
+        // *** Forma vaga
+        xInt %= yInt;
+        Debug.Log(xInt);
     }
 }
     
