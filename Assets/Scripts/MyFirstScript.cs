@@ -16,11 +16,14 @@ public class MyFirstScript : MonoBehaviour
     private float playerSpeed = 3.125f;
     [SerializeField] private bool isGameOver = false;
 
+
     // Mostrar mensajes por consola
     public string message = "Hola mundo.";
     public int points = 256;
     */
 
+    
+    /*
     // Operadores aritméticos
     public float x = 2;
     public float y = 3;
@@ -28,6 +31,12 @@ public class MyFirstScript : MonoBehaviour
     public int xInt = 10;
     public int yInt = 4;
     public int resultInt;
+    */
+    
+    
+    // Operadores de decisión
+    public bool isRaining;
+    public float number; 
 
     private void Start()
     {
@@ -51,6 +60,7 @@ public class MyFirstScript : MonoBehaviour
         Debug.Log("Tengo " + points + " puntos"); // Una sola variable
         Debug.Log("Hola " + playerName + " tienes " + points + " puntos"); // Más de una variable
         */
+        
         
         // Operadores aritméticos
         // * Suma
@@ -99,8 +109,8 @@ public class MyFirstScript : MonoBehaviour
         // *** Forma larga
         //x = x / y;
         // *** Forma vaga
-        x /= y;
-        Debug.Log(x);
+        //x /= y;
+        //Debug.Log(x);
         
         // * Módulo: nos devuelve el resto de la división entera
         // Es importante que las variables sean de tipo int
@@ -111,8 +121,33 @@ public class MyFirstScript : MonoBehaviour
         // *** Forma larga
         //xInt = xInt % yInt;
         // *** Forma vaga
-        xInt %= yInt;
-        Debug.Log(xInt);
+        //xInt %= yInt;
+        //Debug.Log(xInt);
+        
+        
+        // Operadores condicionales
+        // * Igualdad ==
+        // * Desgualdad !=
+        // * Mayor >
+        // * Menor <
+        // * Mayor o igual >=
+        // * Menor o igual <=
+        
+        
+        // Operadores de decisión
+        if (isRaining == true) 
+        {
+            Debug.Log("Recuerda coger paraguas.");
+        }
+
+        if (number > 0)
+        {
+            Debug.Log("El número {number} es positivo.");
+        }
+        else
+        {
+            Debug.Log("El número {number} es negativo o cero");
+        }
     }
 }
     

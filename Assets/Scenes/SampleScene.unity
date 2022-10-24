@@ -150,7 +150,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 168966253}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: d27056ebd917d4ad1bd0aed529abdcea, type: 3}
   m_Name: 
@@ -442,16 +442,13 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2040270866}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c381679dee3f340beb93388b889a76bb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  x: 2
-  y: 11
-  xInt: 10
-  yInt: 4
-  resultInt: 0
+  isRaining: 0
+  number: 0
 --- !u!65 &2040270868
 BoxCollider:
   m_ObjectHideFlags: 0
