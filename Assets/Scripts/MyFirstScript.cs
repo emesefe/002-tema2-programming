@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -33,10 +34,14 @@ public class MyFirstScript : MonoBehaviour
     public int resultInt;
     */
     
-    
+    /*
     // Operadores de decisión
     public bool isRaining;
     public float number; 
+    */
+    
+    // Vectores
+    public Vector3 initialPos = new Vector3 (1, 1, 1);
 
     private void Start()
     {
@@ -133,7 +138,7 @@ public class MyFirstScript : MonoBehaviour
         // * Mayor o igual >=
         // * Menor o igual <=
         
-        
+        /*
         // Operadores de decisión
         if (isRaining == true) 
         {
@@ -148,6 +153,11 @@ public class MyFirstScript : MonoBehaviour
         {
             Debug.Log("El número {number} es negativo o cero");
         }
+        */
+
+        // Vectores
+        //Debug.Log(transform.position); // Accedemos a la posición del Game Object
+        transform.position = initialPos; // Modificamos la posición del Game Object
     }
 }
     
