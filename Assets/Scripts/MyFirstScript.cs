@@ -42,6 +42,7 @@ public class MyFirstScript : MonoBehaviour
     
     // Vectores
     public Vector3 initialPos = new Vector3 (1, 1, 1);
+    public Vector3 subir = new Vector3(0, 1, 0);
 
     private void Start()
     {
@@ -157,7 +158,33 @@ public class MyFirstScript : MonoBehaviour
 
         // Vectores
         //Debug.Log(transform.position); // Accedemos a la posición del Game Object
-        transform.position = initialPos; // Modificamos la posición del Game Object
+        //transform.position = initialPos; // Modificamos la posición del Game Object
+        
+        //transform.position += subir;
+        //transform.position += subir;
+        
+        
+      
+        MySum(2, 3);
+        MySum(5, 2);
+        MySum(1, 0);
+        MySum(10, 9);
+
+
+    }
+
+    private void Update()
+    {
+        if (Input.GetMouseButtonDown(0)){
+            transform.position += subir;
+        }
+    }
+
+    private int MySum(int x, int y)
+    {
+        int result = x + y;
+        Debug.Log(result);
+        return result;
     }
 }
     
