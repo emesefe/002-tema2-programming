@@ -183,7 +183,7 @@ public class MyFirstScript : MonoBehaviour
     private int MySum(int x, int y)
     {
         int result = x + y;
-        Debug.Log(result);
+        //Debug.Log(result);
         return result;
     }
 }
